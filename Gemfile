@@ -17,8 +17,8 @@ end
 group :development do
   gem 'web-console',           '3.1.1'
   gem 'listen',                '3.0.8'
-  gem 'spring'
-  gem 'spring-watcher-listen'
+  #gem 'spring'
+  #gem 'spring-watcher-listen'
 end
 
 group :test do
