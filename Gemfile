@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 gem 'rails',        '5.0.0.1'
 gem 'bootstrap-sass'
 gem 'bcrypt'
-gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'puma'
@@ -18,6 +17,7 @@ gem 'jbuilder',     '2.4.1'
 group :development, :test do
   gem 'sqlite3'
 	gem 'byebug',  '9.0.0', platform: :mri
+  gem 'faker'
 end
 
 group :development do
