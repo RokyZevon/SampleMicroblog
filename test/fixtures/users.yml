@@ -4,6 +4,19 @@ test:
   name:             Fixture Test
   email:            fixture@test.test
   password_digest:  <%= User.digest('password') %>
+  admin:            true
+
+test2:
+  name:             Fixture Test 2
+  email:            fixture2@test.test
+  password_digest:  <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:             <%= "User #{ n }" %>
+  email:            <%= "user-#{ n }@example.com" %>
+  password_digest:  <%= User.digest( 'password' ) %>
+<% end %>
 
 #one:
   #name: MyString
