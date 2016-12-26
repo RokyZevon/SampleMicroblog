@@ -1,5 +1,7 @@
 class User < ApplicationRecord
 
+  has_many :microposts, dependent: :destroy
+
   attr_accessor :remember_token, :activation_token
 
   before_save   :downcase_email
@@ -59,6 +61,11 @@ class User < ApplicationRecord
   # 发送激活邮件
   def send_activation_email
     UserMailer.account_activation( self ).deliver_now
+  end
+
+  # 实现动态流原型
+  def feed
+    Micropost.where( "user_id = ?", id )
   end
 
   private
