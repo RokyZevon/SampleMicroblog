@@ -8,4 +8,8 @@ module UsersHelper
     image_tag( gravatar_url, alt: user.name, class: "gravatar" )
   end
 
+  def admin?( user )
+    user = @current_user
+  end
+
 end
