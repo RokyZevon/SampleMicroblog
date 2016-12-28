@@ -69,7 +69,7 @@ class User < ApplicationRecord
 
   # 发送激活邮件
   def send_activation_email
-    UserMailer.account_activation( self ).deliver_now
+    #UserMailer.account_activation( self ).deliver_now
   end
 
   # 实现动态流原型
