@@ -4,6 +4,8 @@
 
 ######  Rails version:   "5.0.0.1"
 
+######  Web Server:    "Nginx + Passenger"
+
 ######  Database:    "MySQL"
 
 ######  Test:           "Minitest + Guard"
