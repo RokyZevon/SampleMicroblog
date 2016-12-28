@@ -17,6 +17,8 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.4.1'
 
+gem 'listen',                '3.0.8'
+
 group :development, :test do
   gem 'sqlite3'
 	gem 'byebug',  '9.0.0', platform: :mri
@@ -25,7 +27,6 @@ end
 
 group :development do
   gem 'web-console',           '3.1.1'
-  gem 'listen',                '3.0.8'
   #gem 'spring'
   #gem 'spring-watcher-listen'
 end
